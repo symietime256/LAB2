@@ -21,7 +21,11 @@ import model.News;
  */
 public class userDAO {
     
-    private final String ID_ADMIN = "id_Admin";
+    private static final String ID_ADMIN = "id_Admin";
+    private static final String GENDER = "Gender";
+    private static final String USER_NAME = "User_name";
+    private static final String PASSWORD = "PASSWORD";
+    private static final String USERNAME = "Username";
 
     public boolean InsertUser(User user) {
         try {
@@ -59,7 +63,7 @@ public class userDAO {
             DBContext db = new DBContext();
             Connection con = db.getConnection();
             if (con != null) {
-                String sql = "Select * from UserS where Username = " + "'" + username + "'" + "AND PASSWORD = " + "'" + pass + "'";
+                String sql = "Select * from UserS where "+USERNAME+" = " + "'" + username + "'" + "AND PASSWORD = " + "'" + pass + "'";
                 try (Statement call = con.createStatement()) {
                     ResultSet rs = call.executeQuery(sql);
                     while (rs.next()) {             //needed even if just 1 row
@@ -67,7 +71,7 @@ public class userDAO {
                         if (rs.getInt(ID_ADMIN) == 1) {
                             isAdmin = true;
                         }
-                        new_user = new User(rs.getInt("User_id"), rs.getString("PASSWORD"), rs.getNString("User_name"), rs.getString("Username"), rs.getNString("Gender"), isAdmin, rs.getDate("dob"));
+                        new_user = new User(rs.getInt("User_id"), rs.getString(PASSWORD), rs.getNString(USER_NAME), rs.getString(USERNAME), rs.getNString(GENDER), isAdmin, rs.getDate("dob"));
                     }
                 }
                 con.close();
@@ -115,7 +119,7 @@ public class userDAO {
                         if (rs.getInt(ID_ADMIN) == 1) {
                             isAdmin = true;
                         }
-                        new_user = new User(id, rs.getString("PASSWORD"), rs.getNString("User_name"), rs.getString("Username"), rs.getNString("Gender"), isAdmin, rs.getDate("dob"));
+                        new_user = new User(id, rs.getString(PASSWORD), rs.getNString(USER_NAME), rs.getString(USERNAME), rs.getNString("Gender"), isAdmin, rs.getDate("dob"));
                     }
                 }
                 con.close();
@@ -137,10 +141,10 @@ public class userDAO {
                     ResultSet rs = call.executeQuery(sql);
                     while (rs.next()) {             //needed even if just 1 row
                         boolean isAdmin = false;
-                        if (rs.getInt("id_Admin") == 1) {
+                        if (rs.getInt(ID_ADMIN) == 1) {
                             isAdmin = true;
                         }
-                        User new_user = new User(rs.getInt("User_id"), rs.getString("PASSWORD"), rs.getNString("User_name"), rs.getString("Username"), rs.getNString("Gender"), isAdmin, rs.getDate("dob"));
+                        User new_user = new User(rs.getInt("User_id"), rs.getString(PASSWORD), rs.getNString(USER_NAME), rs.getString(USERNAME), rs.getNString(GENDER), isAdmin, rs.getDate("dob"));
                         list.put(new_user.getId(), new_user);
                     }
                 }

@@ -77,7 +77,7 @@ public class CommentController extends HttpServlet {
         }
     }
 
-    private void insertComment(HttpServletRequest request, HttpServletResponse response) {
+    private void insertComment(HttpServletRequest request, HttpServletResponse response) throws NullPointerException {
         try {
             CommentDAO commentDAO = new CommentDAO();
             User user = (User) request.getSession().getAttribute("user");

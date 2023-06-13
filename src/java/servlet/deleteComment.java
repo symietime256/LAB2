@@ -56,9 +56,9 @@ public class deleteComment extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        deleteComment(request, response);
+        deleteCommentt(request, response);
     } 
-private void deleteComment(HttpServletRequest request, HttpServletResponse response) {
+    private void deleteCommentt(HttpServletRequest request, HttpServletResponse response) {
         try {
             CommentDAO commentDAO = new CommentDAO();
 

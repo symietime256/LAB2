@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * @author Asus
  */
 public class CommentDAO {
-
+    private static final String ERROR = "Error";
     public ArrayList<Comments> getListComment(int news_id) throws Exception {
         ArrayList<Comments> listComment = new ArrayList<>();
         Comments comment;
@@ -38,7 +38,7 @@ public class CommentDAO {
                 }
             }
         } catch (SQLException e) {
-            System.out.println("Error");
+            System.out.println(ERROR);
         }
         return listComment;
     }
@@ -67,7 +67,7 @@ public class CommentDAO {
             }
             return true;
         } catch (Exception e) {
-            System.out.println("Error");
+            System.out.println(ERROR);
         } 
         return false;
     }
@@ -82,12 +82,12 @@ public class CommentDAO {
                     //truyen tham so
                     st.setInt(1, comments_id);
                     if (st.executeUpdate() != 1){
-                        System.out.println("ERROR DELETING COMMENTS");
+                        System.out.println(ERROR + " DELETING COMMENTS");
                     }
                 }
             }
         } catch (SQLException e) {
-            System.out.println("Error");
+            System.out.println(ERROR);
         }
     }
 
@@ -103,12 +103,12 @@ public class CommentDAO {
                     st.setString(2, comments.getCommment_content());
                     
                     if (st.executeUpdate() != 1){
-                        System.out.println("ERROR UPDATING COMMENTS");
+                        System.out.println(ERROR +" UPDATING COMMENTS");
                     }
                 }
             }
         } catch (SQLException e) {
-            System.out.println("Error");
+            System.out.println(ERROR);
         }
     }
 

@@ -37,7 +37,7 @@ public class GetNews extends HttpServlet {
         try {
             News news;
             NewsDAO newsDAO = new NewsDAO();
-            catDAO catDAO = new catDAO();
+            
             userDAO userDAO = new userDAO();
             CommentDAO commentDAO = new CommentDAO();
             int news_id = Integer.parseInt(request.getParameter("news_id"));

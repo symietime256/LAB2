@@ -3,15 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/dao/ResetDAO.java</file>
             <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/dao/userDAO.java</file>
-            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/dao/NewsDAO.java</file>
+            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/servlet/UserLogout.java</file>
+            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/servlet/CommentController.java</file>
             <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/dao/DBContext.java</file>
             <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/dao/SaveDAO.java</file>
             <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/dao/CommentDAO.java</file>
-            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/servlet/MainPage.java</file>
-            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/servlet/UserSignup.java</file>
-            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/dao/catDAO.java</file>
+            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/servlet/deleteComment.java</file>
+            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/servlet/GetNews.java</file>
+            <file>file:/F:/SUBJECT%20AND%20STUDY/CODE/Semester%20V%20FU/SWT301/Class%20Resource/LAB/LAB%202%20Unit%20Testing%20Project/PRJ301_News_Website-master/src/java/servlet/publicUserInfo.java</file>
         </group>
     </open-files>
 </project-private>

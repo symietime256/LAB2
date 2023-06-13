@@ -56,12 +56,12 @@ public class UserLogout extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        userDAO dao = new userDAO();
+        
         try {
             request.getSession().setAttribute("isLogin", false);
             request.getSession().removeAttribute("user");
             response.sendRedirect("MainPage");
-        } catch (Exception e) {
+        } catch (IOException e) {
             request.setAttribute("error", "Username or password is incorrect !");
             request.setAttribute("return_page", "Profile.jsp");
             request.getRequestDispatcher("ErrorPage.jsp").forward(request, response);
@@ -75,19 +75,13 @@ public class UserLogout extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
-
-    }
+    
+    
 
     /** 
      * Returns a short description of the servlet.
      * @return a String containing servlet description
      */
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
+    
 
 }

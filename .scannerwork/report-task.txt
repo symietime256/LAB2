@@ -1,6 +1,6 @@
-projectKey=PRJ-After
+projectKey=me-may-beo
 serverUrl=http://localhost:9000
 serverVersion=10.0.0.68432
-dashboardUrl=http://localhost:9000/dashboard?id=PRJ-After
-ceTaskId=AYizwXRBLYWP3hPY1IEq
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYizwXRBLYWP3hPY1IEq
+dashboardUrl=http://localhost:9000/dashboard?id=me-may-beo
+ceTaskId=AYi09R9Obra_7i4DIARz
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYi09R9Obra_7i4DIARz

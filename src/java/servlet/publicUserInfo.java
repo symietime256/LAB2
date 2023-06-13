@@ -68,7 +68,6 @@ public class publicUserInfo extends HttpServlet {
             throws ServletException, IOException {
         try {
             userDAO userDAO = new userDAO();
-            NewsDAO newsDAO = new NewsDAO();
             catDAO catDAO = new catDAO();
             int user_id = Integer.parseInt(request.getParameter("user_id"));
             HashMap<Integer, Category> cat_list = catDAO.getAllCategorys();
@@ -81,7 +80,7 @@ public class publicUserInfo extends HttpServlet {
             request.getSession().setAttribute("cat_list", cat_list);
             request.setAttribute("puser", user);
             request.getRequestDispatcher("publicUserInfo.jsp").forward(request, response);
-        } catch (Exception e) {
+        } catch (ServletException | IOException | NumberFormatException e) {
             System.out.println(e);
             request.setAttribute("error", "Username or password is incorrect !");
             request.setAttribute("return_page", "login.jsp");
