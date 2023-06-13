@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Montserrat1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/font/Montserrat.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
